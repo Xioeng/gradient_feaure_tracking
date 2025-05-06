@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="The Lazy Student's Dream: ChatGPT Passing an Engineering Course on Its Own"
+      content="Learning-based Adaptive Navigation for Scalar Field Mapping and Feature Tracking
     />
     <meta name="keywords" content="Keywords" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      The Lazy Student's Dream: ChatGPT Passing an Engineering Course on Its Own
+      Learning-based Adaptive Navigation for Scalar Field Mapping and Feature Tracking
     </title>
 
     <link
@@ -24,36 +24,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
-    <style>
-      .question-section {
-        margin: 2rem 0;
-        padding: 2rem;
-        background-color: #f5f5f5;
-        border-radius: 8px;
-      }
-
-      .image-comparison {
-        display: flex;
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-
-      .image-container {
-        flex: 1;
-        text-align: center;
-      }
-
-      .image-container img {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .question-type {
-        margin-bottom: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
   </head>
   <body>
     <section class="hero">
@@ -62,23 +34,32 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
-                The Lazy Student's Dream: ChatGPT Passing an Engineering Course
-                on Its Own
+                Learning-based Adaptive Navigation for Scalar Field Mapping and Feature Tracking
               </h1>
               <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <a href="https://gokulp01.github.io/">Gokul Puthumanaillam</a
-                  ><sup></sup>,</span
-                >
+                  <a href="https://xioeng.github.io/">Jose Fuentes</a
+                  ><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://mornik.web.illinois.edu/">Melkior Ornik</a
-                  ><sup></sup>
+                  <a href="https://mornik.web.illinois.edu/">Paulo Padrao</a
+                  ><sup>1</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://mornik.web.illinois.edu/">Abdullah Al Redwan Newaz</a
+                  ><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://mornik.web.illinois.edu/">Leonardo Bobadilla</a
+                  ><sup>1</sup>
                 </span>
               </div>
 
               <div class="is-size-5 publication-authors">
                 <span class="author-block"
-                  ><sup></sup>University of Illinois Urbana-Champaign</span
+                  ><sup>1</sup>Florida International University</span
+                >
+                <span class="author-block"
+                  ><sup>2</sup>University of New Orleans</span
                 >
                 <!--<span class="author-block"><sup>2</sup>Department Name</span>-->
               </div>
@@ -94,11 +75,11 @@
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Paper</span>
+                      <span>Paper (Comming Soon)</span>
                     </a>
                   </span>
                   <!-- Code Link. -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href="https://github.com/gradegpt/gradegpt.github.io/tree/main"
                       class="button is-normal is-rounded is-dark"
@@ -108,7 +89,7 @@
                       </span>
                       <span>Code</span>
                     </a>
-                  </span>
+                  </span> -->
                 </div>
               </div>
             </div>
@@ -125,25 +106,7 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                This paper presents a comprehensive investigation into the
-                capability of Large Language Models (LLMs) to successfully
-                complete a semester-long undergraduate control systems course.
-                Through evaluation of 115 course deliverables, we assess LLM
-                performance using ChatGPT under a "minimal effort" protocol that
-                simulates realistic student usage patterns. The investigation
-                employs a rigorous testing methodology across multiple
-                assessment formats, from auto-graded multiple choice questions
-                to complex Python programming tasks and long-form analytical
-                writing. Our analysis provides quantitative insights into AI's
-                strengths and limitations in handling mathematical formulations,
-                coding challenges, and theoretical concepts in control systems
-                engineering. The LLM achieved a B-grade performance (82.24%),
-                approaching but not exceeding the class average (84.99%), with
-                strongest results in structured assignments and greatest
-                limitations in open-ended projects. The findings inform
-                discussions about course design adaptation in response to AI
-                advancement, moving beyond simple prohibition towards thoughtful
-                integration of these tools in engineering education.
+                Scalar field features such as extrema, contours, and saddle points are essential for applications in environmental monitoring, search and rescue, and resource exploration. Traditional navigation methods often rely on predefined trajectories, leading to inefficient and resource-intensive mapping. This paper introduces a new adaptive navigation framework that leverages learning techniques to enhance exploration efficiency and effectiveness in scalar fields, even under noisy data and obstacles. The framework employs Partial Differential Equations to model scalar fields and a Gaussian Process Regressor to estimate the fields and their gradients, enabling real-time path adjustments and obstacle avoidance. We provide a theoretical foundation for the approach and address several limitations found in existing methods. The effectiveness of our framework is demonstrated through simulation benchmarks and field experiments with an Autonomous Surface Vehicle, showing improved efficiency and adaptability compared to traditional methods and offering a robust solution for real-time environmental monitoring.
               </p>
             </div>
           </div>
@@ -151,483 +114,261 @@
       </div>
     </section>
 
-    <!-- Relevant Resources Section -->
+  <!-- Methodology Section  -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Methodology</h2>
+      <div class="diagram-container">
+        <!-- Images in one row -->
+        <div class="row">
+          <div class="step" id="field">
+            <img src="assets/images/methods/field.png" alt="Water scalar field" />
+            <p><strong>Water scalar field φ</strong><br />on a domain 𝒲</p>
+          </div>
+          <div class="step" id="gp">
+            <img src="assets/images/methods/gp.png" alt="GP estimation" />
+            <p><strong style="color: #6a1b9a;">Single agent</strong> GP estimation<br />𝒢𝒫(m, k) ~ φ</p>
+          </div>
+          <div class="step" id="gradient">
+            <img src="assets/images/methods/gp_gradient.png" alt="Gradient access" />
+            <p>Gradient access ∇m = ∇φ<br /><strong style="color: orange;">enables</strong> gradient-based tasks</p>
+          </div>
+          <div class="step" id="obstacle">
+            <img src="assets/images/methods/gd_obstacle.png" alt="Obstacle avoidance" />
+            <p>Bug-based <strong style="color: #6a1b9a;">obstacle avoidance</strong><br />routine with gradient-descent</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="title is-3">Methods: Algorithm Overview</h2>
+      <div class="flowchart">
+        <!-- Row 1 -->
+        <div class="startstop" style="grid-column: 1; grid-row: 1;">
+          Initialize D₀, θ, x₀, n = 1
+        </div>
+        <div class="arrow down" style="grid-column: 1; grid-row: 2;"></div>
+      
+        <!-- Row 2 -->
+        <div class="process" style="grid-column: 1; grid-row: 3;">
+          Collect initial data D₀
+        </div>
+        <div class="arrow down" style="grid-column: 1; grid-row: 4;"></div>
+      
+        <!-- Row 3 -->
+        <div class="process" style="grid-column: 1; grid-row: 5;">
+          Sample yₙ = φ(xₙ) + noise<br>
+          Update Dₙ = Dₙ₋₁ ∪ {(xₙ, yₙ)}<br>
+          Train 𝒢𝒫(m(x), k(x, x′))
+        </div>
+
+        <div class="arrow right" style="grid-column: 2; grid-row: 5;"></div>
+      
+        <div class="process" style="grid-column: 3; grid-row: 5;">
+          Compute dₙ ∝ ∇m(xₙ)
+        </div>
+
+        <div class="arrow right" style="grid-column: 4; grid-row: 5;"></div>
+      
+        <div class="decision" style="grid-column: 5; grid-row: 5;">
+          <div class="decision-content">
+            Obstacle at<br> xₙ + dₙ?
+          </div>
+        </div>
+      
+        <!-- Row 2 (yes path) -->
+        <div class="arrow up" style="grid-column: 5; grid-row: 4;"></div>
+        <div class="process" style="grid-column: 5; grid-row: 3;">
+          Rotate dₙ ← R(θ)·dₙ
+        </div>
+        <div class="arrow right" style="grid-column: 6; grid-row: 3;"></div>
+        <div class="arrow down" style="grid-column: 7; grid-row: 4;"></div>
+        <!-- Move and update -->
+        <div class="arrow right" style="grid-column: 6; grid-row: 5;"></div>
+        <div class="process" style="grid-column: 7; grid-row: 5;">
+          Compute uₙ<br>and move to dₙ
+        </div>
+        <div class="arrow down" style="grid-column: 7; grid-row: 6;"></div>
+      
+        <div class="process" style="grid-column: 7; grid-row: 7;">
+          Update<br>xₙ₊₁ = xₙ + dₙ
+        </div>
+        <div class="arrow left" style="grid-column: 4; grid-row: 7;"></div>
+        <div class="arrow up" style="grid-column: 1; grid-row: 7;"></div>
+      </div>
+      
+  </section>
+
+    <!-- benchmarking section -->
+    <!-- table -->
+    <!-- benchmarking images -->
     <section class="section">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <h3 class="title is-4">
-              Relevant Resources and Links for the Paper
-            </h3>
+        <h2 class="title is-3">Algorithm Benchmarking</h2>
+        <h4 class="title is-4 has-text-weight-bold is-italic mt-5">
+          Algorithm Comparison:
+        </h4>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <!-- <caption class="has-text-centered is-size-5 mb-4">
+            <strong>Table 1:</strong> Algorithm Comparison
+          </caption> -->
+          <thead>
+            <tr>
+              <th rowspan="2">Attribute</th>
+              <th colspan="3">GD Algorithms</th>
+              <th>PMTCS</th>
+              <th>AdaptGP-MTCS</th>
+              <th>Proposed</th>
+            </tr>
+            <tr>
+              <th><a href="#fricke2022">[Fricke et al., 2022]</a></th>
+              <th><a href="#kitts2022">[Kitts et al., 2022]</a></th>
+              <th><a href="#fumin2022">[Fumin et al., 2022]</a></th>
+              <th><a href="#chen19pareto">[Chen et al., 2019]</a></th>
+              <th><a href="#suryan2023">[Suryan et al., 2023]</a></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Multitask (e.g., hotspot localization, contour track)</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Number of robots <em>q</em></td>
+              <td><em>q</em> ≥ 3</td>
+              <td><em>q</em> ≥ 3</td>
+              <td><em>q</em> ≥ 2</td>
+              <td><em>q</em> ≥ 1</td>
+              <td><em>q</em> ≥ 1</td>
+              <td><em>q</em> ≥ 1</td>
+            </tr>
+            <tr>
+              <td>Learning approach</td>
+              <td>&#10008;</td>
+              <td>&#10008;</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Obstacle-avoidance</td>
+              <td>&#10008;</td>
+              <td>&#10008;</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+              <td>&#10008;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Success rate</td>
+              <td colspan="3">55%</td>
+              <td>45%</td>
+              <td>55%</td>
+              <td>90%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="is-size-7 has-text-grey mt-2">
+          Note: Success rate is based on simulated experiments (see next section).
+        </p>
 
-            <!-- Syllabus -->
-            <div class="mb-4">
-              <a
-                href="assets/syllabus.pdf"
-                class="button is-link is-outlined"
-                target="_blank"
-              >
-                <span class="icon">
-                  <i class="fas fa-book"></i>
-                </span>
-                <span>Syllabus</span>
-              </a>
-            </div>
-
-            <!-- Exams -->
-            <div class="mb-4">
-              <a
-                href="assets/midterm1.pdf"
-                class="button is-link is-outlined mr-2"
-                target="_blank"
-              >
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i>
-                </span>
-                <span>Midterm 1</span>
-              </a>
-              <a
-                href="assets/midterm2.pdf"
-                class="button is-link is-outlined mr-2"
-                target="_blank"
-              >
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i>
-                </span>
-                <span>Midterm 2</span>
-              </a>
-              <a
-                href="assets/final.pdf"
-                class="button is-link is-outlined"
-                target="_blank"
-              >
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i>
-                </span>
-                <span>Final Exam</span>
-              </a>
-            </div>
-
-            <!-- Design Project -->
-            <div class="mb-4">
-              <a
-                href="https://uiuc-ae353.github.io"
-                class="button is-link is-outlined"
-                target="_blank"
-              >
-                <span class="icon">
-                  <i class="fas fa-project-diagram"></i>
-                </span>
-                <span>Design Project</span>
-              </a>
-            </div>
+        <h4 class="title is-4 has-text-weight-bold is-italic mt-5">
+          Simulation Performance:
+        </h4>
+        <p>
+          Robots are tasked with reaching the highest concentration, located at the rightmost part of the environment. The starting point is the black dot; the final point is marked with a cross. Each example corresponds to a different starting point.
+        </p>
+        <div class="columns is-multiline is-centered">
+          <!-- Image 1 -->
+          <div class="column is-3-desktop is-6-tablet is-12-mobile">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_1.png" alt="Benchmark 1" />
+            </figure>
+          </div>
+          <!-- Image 2 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_2.png" alt="Benchmark 2" />
+            </figure>
+          </div>
+          <!-- Image 3 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_3.png" alt="Benchmark 3" />
+            </figure>
+          </div>
+          <!-- Image 4 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_4.png" alt="Benchmark 4" />
+            </figure>
+          </div>
+          <!-- Image 5 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_16.png" alt="Benchmark 16" />
+            </figure>
+          </div>
+          <!-- Image 6 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_17.png" alt="Benchmark 17" />
+            </figure>
+          </div>
+          <!-- Image 7 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_18.png" alt="Benchmark 18" />
+            </figure>
+          </div>
+          <!-- Image 8 -->
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="assets/images/benchmarking/benchmark_19.png" alt="Benchmark 19" />
+            </figure>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Overview of Results Section -->
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Overview of Results</h2>
-
-            <div class="content has-text-justified mb-5">
-              <p>
-                Overall performance: Image below shows LLM performance across
-                assessment types and prompting methods, based on three runs per
-                question. While ChatGPT's exact wording varied between runs,
-                these variations had minimal impact on scoring. Several key
-                patterns emerge: First, context-enhanced prompting consistently
-                outperforms other methodologies across all question types.
-                Second, the progression from image-based to text-based inputs
-                shows systematic improvement, particularly in questions
-                involving mathematical notation. The LLM achieved an overall
-                score of 82.24% using context-enhanced prompting, compared to
-                the class average of 84.99% -- both corresponding to a 'B'
-                grade. This performance difference manifests distinctly across
-                assessments: minimal in structured assignments but substantial
-                in open-ended assessments.
-              </p>
-            </div>
-
-            <!-- Results Images -->
-            <div class="columns is-mobile is-multiline">
-              <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                <figure class="image">
-                  <img src="assets/result1.png" alt="Overall performance" />
-                  <figcaption class="has-text-centered mt-2">
-                    (a) Overall performance
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                <figure class="image">
-                  <img src="assets/result2.png" alt="HW performance" />
-                  <figcaption class="has-text-centered mt-2">
-                    (b) HW performance
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                <figure class="image">
-                  <img src="assets/result3.png" alt="Project performance" />
-                  <figcaption class="has-text-centered mt-2">
-                    (c) Project performance
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="column is-3-desktop is-6-tablet is-12-mobile">
-                <figure class="image">
-                  <img src="assets/result4.png" alt="Examination performance" />
-                  <figcaption class="has-text-centered mt-2">
-                    (d) Examination performance
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+        <div class="legend">
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: blue;"></span> GD
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: green;"></span> AdaptGP-MTCS
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: purple;"></span> PMTCS
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: rgb(255, 102, 0);"></span> Proposed AN
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: black; border-radius: 50%;"></span> Initial Position
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Performance Data Section -->
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full">
-            <h2 class="title is-3">Performance Data</h2>
+      
+    
 
-            <!-- Performance Table -->
-            <div class="table-container mb-6">
-              <table
-                class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-              >
-                <caption class="has-text-centered is-size-5 mb-4">
-                  <strong>Table 1:</strong>
-                  LLM performance across assessment types using various
-                  prompting methodologies.
-                </caption>
-                <thead>
-                  <tr>
-                    <th colspan="2" class="has-text-centered">Question Type</th>
-                    <th colspan="2" class="has-text-centered">Image Based</th>
-                    <th colspan="2" class="has-text-centered">
-                      Simplified Text
-                    </th>
-                    <th class="has-text-centered">Context-Enhanced</th>
-                  </tr>
-                  <tr>
-                    <th>Category</th>
-                    <th>Sub-type</th>
-                    <th>Zero-shot (%)</th>
-                    <th>Multi-shot (%)</th>
-                    <th>Zero-shot (%)</th>
-                    <th>Multi-shot (%)</th>
-                    <th>Multi-shot (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- HW Section -->
-                  <tr>
-                    <td rowspan="4">HW</td>
-                    <td>MCQ</td>
-                    <td>89.5</td>
-                    <td>93.2</td>
-                    <td>91.2</td>
-                    <td>94.8</td>
-                    <td>96.5</td>
-                  </tr>
-                  <tr>
-                    <td>MCMCQ</td>
-                    <td>85.3</td>
-                    <td>88.4</td>
-                    <td>86.7</td>
-                    <td>90.2</td>
-                    <td>92.1</td>
-                  </tr>
-                  <tr>
-                    <td>Numerical</td>
-                    <td>82.4</td>
-                    <td>85.6</td>
-                    <td>84.2</td>
-                    <td>87.5</td>
-                    <td>89.3</td>
-                  </tr>
-                  <tr>
-                    <td>Code-Based</td>
-                    <td>86.5</td>
-                    <td>89.8</td>
-                    <td>88.2</td>
-                    <td>91.3</td>
-                    <td>93.2</td>
-                  </tr>
+    <!--field experiment section -->
+    <h4 class="title is-4 has-text-weight-bold is-italic mt-5">
+      Field Experiments:
+    </h4>
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="assets/videos/icra-video-feature-tracking.mp4" type="video/mp4" />
+        Your browser does not support the video tag. Please download the video
+        <a href="videos/icra-video-feature-tracking.mp4">here</a>.
+      </video>
+    </div>
+  </div>
+  </section>
 
-                  <!-- Projects Section with dashed border -->
-                  <tr class="has-background-light">
-                    <td rowspan="2">Projects</td>
-                    <td>Code</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>56.2</td>
-                    <td>57.6</td>
-                    <td>58.5</td>
-                  </tr>
-                  <tr class="has-background-light">
-                    <td>Report</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>62.8</td>
-                    <td>64.9</td>
-                    <td>65.8</td>
-                  </tr>
 
-                  <!-- Exam Section with dashed border -->
-                  <tr>
-                    <td rowspan="3">Exam</td>
-                    <td>Mid-Term</td>
-                    <td>85.3</td>
-                    <td>87.5</td>
-                    <td>86.7</td>
-                    <td>88.8</td>
-                    <td>89.8</td>
-                  </tr>
-                  <tr>
-                    <td>Finals: Written</td>
-                    <td>83.0</td>
-                    <td>84.1</td>
-                    <td>83.8</td>
-                    <td>84.6</td>
-                    <td>86.5</td>
-                  </tr>
-                  <tr>
-                    <td>Finals: Auto-graded</td>
-                    <td>93.5</td>
-                    <td>95.3</td>
-                    <td>94.8</td>
-                    <td>96.2</td>
-                    <td>97.4</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Performance Analysis Text -->
-            <div class="content">
-              <h4 class="title is-4 has-text-weight-bold is-italic">
-                Homework Performance:
-              </h4>
-              <p>
-                Homework performance reveals subtle patterns across question
-                types. The LLM achieved 90.38% against a class average of
-                91.44%, with performance varying by question type. MCQs showed
-                the highest success, followed by code-based questions, MCMCQ,
-                and numerical problems. This hierarchy persisted across all
-                prompting methodologies, though with varying gaps. The
-                multi-shot approach proved particularly effective for MCQs.
-                Analysis of the 92 homework questions reveals that performance
-                degradation correlated strongly with question complexity:
-                single-concept questions saw higher success rates compared to
-                integration-heavy problems.
-              </p>
-
-              <h4 class="title is-4 has-text-weight-bold is-italic mt-5">
-                Examination Performance:
-              </h4>
-              <p>
-                Examination analysis provides critical insights into LLM
-                capabilities under different assessment conditions. The model
-                achieved 89.72% overall compared to the class average of 84.81%,
-                but this aggregate masks important variations. Auto-graded
-                components of the final (97.4%) significantly outperformed
-                written sections (86.5%), with midterm performance (89.8%)
-                showing intermediate results. This pattern held consistent
-                across prompting methodologies. The performance gap between
-                written and auto-graded components suggests fundamental
-                differences in the model's ability to handle structured versus
-                open-ended problems.
-              </p>
-
-              <h4 class="title is-4 has-text-weight-bold is-italic mt-5">
-                Project Performance:
-              </h4>
-              <p>
-                Project evaluation exposed systematic limitations in LLM
-                capabilities, with the most significant performance gap observed
-                (64.34% versus class average 80.99%). The distinction between
-                code implementation and report writing reveals specific
-                challenges. Code submissions showed consistent patterns of
-                failure in system integration, error handling, and optimization,
-                while maintaining basic functional correctness. Report analysis
-                indicates stronger performance in methodology description and
-                result presentation but weaker performance in critical analysis
-                and design justification. Neither image-based nor multi-shot
-                approaches provided significant improvements in project
-                performance, suggesting fundamental limitations rather than
-                methodology-dependent constraints.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      /* Custom styles for table */
-      .table-container {
-        overflow-x: auto;
-      }
-
-      .table th,
-      .table td {
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .table caption {
-        caption-side: top;
-      }
-
-      /* Improve table readability on mobile */
-      @media screen and (max-width: 768px) {
-        .table {
-          font-size: 0.85rem;
-        }
-      }
-    </style>
-    <!-- Interactive Questions Section -->
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Example Questions and Response</h2>
-
-            <!-- Shot Type Selection -->
-            <div class="tabs is-centered is-boxed">
-              <ul id="shotTypeTabs">
-                <li class="is-active" data-shot="zeroshot"><a>Zero-Shot</a></li>
-                <li data-shot="multishot"><a>Multi-Shot</a></li>
-              </ul>
-            </div>
-
-            <!-- Randomizer Button -->
-            <div class="has-text-centered mb-6">
-              <button
-                class="button is-primary is-large"
-                onclick="showRandomImage()"
-              >
-                <span class="icon">
-                  <i class="fas fa-random"></i>
-                </span>
-                <span>Show Random Example</span>
-              </button>
-            </div>
-
-            <!-- Image Display Section -->
-            <div id="imageDisplay" class="content has-text-centered">
-              <!-- Images will be inserted here -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      .image-display img {
-        max-width: 100%;
-        margin: 1rem 0;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .image-container {
-        margin-bottom: 2rem;
-        background-color: #f5f5f5;
-        padding: 2rem;
-        border-radius: 8px;
-      }
-    </style>
-
-    <script>
-      // Define the image paths
-      const imagePaths = {
-        zeroshot: {
-          // Each set includes both 'im' and 'sm' images
-          mcq1: {
-            im: "images/zeroshot/mcq1-im.png",
-            sm: "images/zeroshot/mcq1-sm.png",
-          },
-          mcmcq: {
-            im: "images/zeroshot/mcmcq-im.png",
-            sm: "images/zeroshot/mcmcq-sm.png",
-          },
-          num1: {
-            im: "images/zeroshot/num1-im.png",
-            sm: "images/zeroshot/num1-sm.png",
-          },
-          code1: {
-            im: "images/zeroshot/code1-im.png",
-            sm: "images/zeroshot/code1-sm.png",
-          },
-          exam: {
-            im: "images/zeroshot/exam-im.png",
-            sm: "images/zeroshot/exam-sm.png",
-          },
-        },
-        multishot: {
-          // Each entry is a standalone chain-of-thought explanation
-          mcq: "images/multishot/mcq-ce.png",
-          mcq2: "images/multishot/mcq-ce2.png",
-          mmccq: "images/multishot/mmccq-ce.png",
-          num1: "images/multishot/num1-ce.png",
-          exam: "images/multishot/exam-ce.png",
-        },
-      };
-
-      let currentShot = "zeroshot";
-
-      function showRandomImage() {
-        const imageDisplay = document.getElementById("imageDisplay");
-
-        if (currentShot === "zeroshot") {
-          // Get all available keys for zero-shot
-          const keys = Object.keys(imagePaths.zeroshot);
-          const randomKey = keys[Math.floor(Math.random() * keys.length)];
-          const images = imagePaths.zeroshot[randomKey];
-
-          let html = '<div class="image-container">';
-          html += `<img src="${images.im}" alt="Question" class="mb-4">`;
-          html += `<img src="${images.sm}" alt="Solution" class="mb-4">`;
-          html += "</div>";
-          imageDisplay.innerHTML = html;
-        } else {
-          // Get all available images for multi-shot
-          const images = Object.values(imagePaths.multishot);
-          const randomImage = images[Math.floor(Math.random() * images.length)];
-
-          let html = '<div class="image-container">';
-          html += `<img src="${randomImage}" alt="Chain of thought explanation" class="mb-4">`;
-          html += "</div>";
-          imageDisplay.innerHTML = html;
-        }
-      }
-
-      // Tab switching functionality
-      document.addEventListener("DOMContentLoaded", () => {
-        const shotTabs = document.querySelectorAll("#shotTypeTabs li");
-
-        // Shot type switching
-        shotTabs.forEach((tab) => {
-          tab.addEventListener("click", () => {
-            shotTabs.forEach((t) => t.classList.remove("is-active"));
-            tab.classList.add("is-active");
-            currentShot = tab.dataset.shot;
-            document.getElementById("imageDisplay").innerHTML = ""; // Clear current images
-          });
-        });
-      });
-    </script>
-  </body>
   <!-- Acknowledgments Section -->
   <section class="section">
     <div class="container is-max-desktop">
@@ -636,16 +377,8 @@
           <h2 class="title is-3">Acknowledgments</h2>
           <div class="content has-text-justified">
             <p>
-              This work was supported by the Grants for Advancement of Teaching
-              in Engineering program at the Grainger College of Engineering,
-              University of Illinois Urbana-Champaign. The authors thank Prof.
-              Timothy Bretl for developing the course materials, assignments,
-              projects, and PrairieLearn infrastructure. We appreciate Grayson
-              Schaer for creating the project environments critical to our
-              evaluation methodology, and Pranay Thangeda for his contributions
-              to PrairieLearn questions and lectures. We also thank all others
-              who contributed to the course materials and supported this
-              research.
+              This work is supported in part by NSF grants IIS-2024733, IIS-2331908, the Office of Naval Research grant N00014-23-1-2789, the U.S. Dept of Homeland Security grant 23STSLA00016-01-00,
+              the U.S. Department of Defense (DoD) grant 78170-RT-REP, and the FDEP grant INV31.
             </p>
           </div>
         </div>
